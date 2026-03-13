@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playground | SkillVerse</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+<h1>SkillVerse</h1>
+<div class="menu">
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/playground">Playground</a>
+<a href="/projects">Projects</a>
+</div>
+</nav>
+
+<div class="container">
+<h1>Live Code Playground</h1>
+
+<textarea id="code"></textarea>
+
+<button onclick="runCode()">Run Code</button>
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<iframe id="output"></iframe>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

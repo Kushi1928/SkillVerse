@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | SkillVerse</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="dashboard">
+
+<nav>
+<h1>SkillVerse</h1>
+<div class="menu">
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/playground">Playground</a>
+<a href="/projects">Projects</a>
+</div>
+</nav>
+
+<div class="container">
+<h1>Skill Dashboard</h1>
+
+<div class="skills cards-grid">
+
+<div class="card">
+<h2>Web Development</h2>
+<p>Progress: 70%</p>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 70%;"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Data Science</h2>
+<p>Progress: 45%</p>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 45%;"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Machine Learning</h2>
+<p>Progress: 30%</p>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 30%;"></div>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
